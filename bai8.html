@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm đảo ngược mảng số nguyên</title>
+</head>
+<body>
+<script>
+    function reverseArray(array) {
+        let length = array.length ;
+        for (let i = 0; i < length/2; i++) {
+            let temp;
+            temp = array[length - i - 1];
+            array[length - i - 1] = array[i];
+            array[i] = temp;
+        }
+        return array;
+    }
+    reverseArray();
+</script>
+</body>
+</html>

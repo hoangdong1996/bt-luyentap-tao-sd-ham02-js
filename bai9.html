@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm tìm ký tự trong mảng</title>
+</head>
+<body>
+<script>
+    function findCharactersInArray(array, characters) {
+        let count = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (characters == array[i]) {
+                    count += 1;
+                }
+            }
+        if (count == 0) {
+            return -1;
+        } else {
+            return count;
+        }
+    }
+</script>
+</body>
+</html>
